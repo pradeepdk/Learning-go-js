@@ -57,6 +57,7 @@ body {
     box-shadow: 0 0 4px 1px #bcbcbc;
 	overflow: hidden;
 	border-bottom: 3px solid #9E7CC1;
+	min-width: 800px;
 }
 .logo {
     font-size: 30px;
