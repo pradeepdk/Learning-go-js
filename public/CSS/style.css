@@ -55,9 +55,13 @@ body {
 .header {
     padding: 20px 2%;
     box-shadow: 0 0 4px 1px #bcbcbc;
+	overflow: hidden;
+	border-bottom: 3px solid #9E7CC1;
 }
 .logo {
     font-size: 30px;
+	float: left;
+	color: #9E7CC1;
 }
 .wrapper {
     padding: 20px 2% 0;
@@ -67,4 +71,58 @@ body {
     height: 500px;
     margin: 0 auto;
     border:1px solid #aaa;
+}
+.headerLinks {
+    float: left;
+	margin: 8px 0 0 80px;
+}
+.headerLinks a {
+    border: 1px solid #d1d3d4;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px 0 0;
+	color: #58595b;
+}
+.headerLinks a:hover {
+	cursor: pointer;
+	background: #dfdfdf;
+}
+.headerLinks a:active {
+	background: #ccc;
+}
+.eachLinkDiv {
+	overflow: hidden;
+}
+.leftDiv, .rightDiv {
+    width: 49%;
+    float: left;
+}
+.jsonData {
+	border:1px solid #aaa;
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+	margin: 18px 0 0;
+	padding: 8px;
+}
+h1 {
+	font-size: 20px;
+	text-align: center;
+}
+.showJsonButton {
+	border:1px solid #9E7CC1;
+	background: #9E7CC1;
+	padding: 5px 15px;
+	color: #fff;
+	border-radius: 3px;
+}
+.showJsonButton:hover {
+	background: #9c7Ca5;
+	cursor: pointer;
+}
+.jsonText {
+	color: #888;
+	font-size: 14px;
+	margin: 5px 0 0;
 }

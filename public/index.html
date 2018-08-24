@@ -1,30 +1,79 @@
 <!Doctype <!DOCTYPE html>
 
-<html> 
-    <head>
-        <meta charset="utf-8">
-        <title>Learning Go Js</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-    <body>
+<html>
 
-        <div class="container">
-            <div class="header">
-                <span class="logo">GoJs App</span>
+<head>
+    <meta charset="utf-8">
+    <title>Learning Go Js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
 
-                <button class="" onclick="drawChart()">Click here</button>
-            </div>
+<body>
 
-            <div class="wrapper">
-                <div id="myDiagramDiv" class="diagramDiv"></div>
+    <div class="container">
+        <div class="header">
+            <span class="logo">GoJs App</span>
+
+            <div class="headerLinks">
+                <a href="#simple">Simple</a>
+                <a href="#graphLinksModel">Graph Model</a>
+                <a href="#treeModel">Tree Model</a>
             </div>
         </div>
 
-        <script type="text/javascript" src="JS/external/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="JS/external/go-debug.js"></script>
-        <script type="text/javascript" src="JS/main.js"></script>
-       
-    </body>
+        <div id="main" class="wrapper">
+            <div class="eachLinkDiv" data-divname="simple">
+                <div class="leftDiv">
+                    <h1>Simple Model</h1>
+                    <div id="simpleDiagram" class="diagramDiv"></div>
+                </div>
+                <div class="rightDiv">
+                    <button class="showJsonButton" onclick="showSimpleJson()">Get JSON</button>
+                    <span class="jsonText"> Click this button to get JSON from GoJs model</span>
+                    <div id="simpleJson" class="jsonData">
+                        <pre><code></code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="eachLinkDiv" data-divname="graphLinksModel">
+                <div class="leftDiv">
+                    <h1>Graph Link Model</h1>
+                    <div id="graphLinksModelDiagram" class="diagramDiv"></div>
+                </div>
+                <div class="rightDiv">
+                    <button class="showJsonButton" onclick="showGraphJson()">Get JSON</button>
+                    <span class="jsonText"> Click this button to get JSON from GoJs model</span>
+                    <div id="graphJson" class="jsonData">
+                        <pre><code></code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="eachLinkDiv" data-divname="treeModel">
+                <div class="leftDiv">
+                    <h1>Tree Model</h1>
+                    <div id="treeModelDiagram" class="diagramDiv"></div>
+                </div>
+                <div class="rightDiv">
+                    <button class="showJsonButton" onclick="showTreeJson()">Get JSON</button>
+                    <span class="jsonText"> Click this button to get JSON from GoJs model</span>
+                    <div id="treeJson" class="jsonData">
+                        <pre><code></code></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="JS/external/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="JS/external/sammy-latest.min.js"></script>
+    <script type="text/javascript" src="JS/external/go-debug.js"></script>
+    <script type="text/javascript" src="JS/external/SerpentineLayout.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+    <script type="text/javascript" src="JS/diagrams.js"></script>
+
+</body>
+
 </html>
