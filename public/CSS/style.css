@@ -65,6 +65,7 @@ body {
 }
 .wrapper {
     padding: 20px 2% 0;
+	min-width: 800px;
 }
 .diagramDiv {
     width:85%;
